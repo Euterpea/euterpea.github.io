@@ -9,6 +9,7 @@ Euterpea is a cross-platform, domain-specific language for computer music applic
   - [Midi on Linux](https://euterpea.github.io/midi-on-linux)
   - [Midi on Windows](https://euterpea.github.io/midi-on-windows)
 - [Getting Started](https://euterpea.github.io/getting-started)
+- [Euterpea & HSoM API](https://euterpea.github.io/api)
 - [Tutorials and Talks](https://euterpea.github.io/tutorials-and-talks)
 
 # About Euterpea
