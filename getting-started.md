@@ -1,4 +1,4 @@
-# Euterpea 2 Examples
+# Getting Started & Examples
 
 Once you have Euterpea and possibly HSoM installed, it’s a good idea to try some really simple things first. If you have any trouble with these, please take a look at the [troubleshooting page](https://euterpea.github.io/troubleshooting).
 
