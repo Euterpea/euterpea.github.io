@@ -2,6 +2,8 @@
 
 # MIDI on Linux
 
+[Back to Euterpea Home Page](https://euterpea.github.io/)
+
 Last modified: Jan 18, 2019 @ 1:26 pm
 
 The easiest way to get MIDI output from Euterpea with Linux is to use Timidity. You can also use FluidSynth or any other Linux-compatible MIDI synthesizer, 
