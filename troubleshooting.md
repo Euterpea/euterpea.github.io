@@ -1,5 +1,9 @@
 # Troubleshooting
 
+
+[Back to Euterpea Home Page](https://euterpea.github.io/)
+
+
 Information last updated: Jan 10, 2024
 
 This page has Euterpea and HSoM general problems listed first followed by OS-specific issues. 
