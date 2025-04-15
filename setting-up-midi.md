@@ -1,5 +1,8 @@
 # Setting up MIDI for Euterpea
 
+
+[Back to Euterpea Home Page](https://euterpea.github.io/)
+
 For Euterpea’s ``play`` functions and HSoM’s MUIs to work, you must have MIDI appropriately configured on your computer. 
 The details of that configuration varies by operating system, but they share one major requirement in common: 
 you must have a synthesizer installed and running to which Euterpea can send MIDI information. Sometimes this setup requires 
