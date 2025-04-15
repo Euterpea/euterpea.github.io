@@ -9,11 +9,11 @@ methods have since changed (see the Euterpea Homepage for details), but everythi
 
 Tutorials on using Euterpea’s Music types to make simple sounds.
 
-- *Euterpea’s Music Types* ([PDF slides](https://drive.google.com/open?id=1A7A8LhR2q-kXOf1qj1uskzaFOU6qf6cR) | [Example Code as .lhs](https://drive.google.com/open?id=1BEmrKx6IMHgeSowPqHERlVtQrcQdNsfl)). A walkthrough of Euterpea’s music types. 
+- *Euterpea’s Music Types* ([PDF slides](https://drive.google.com/open?id=1A7A8LhR2q-kXOf1qj1uskzaFOU6qf6cR) \| [Example Code as .lhs](https://drive.google.com/open?id=1BEmrKx6IMHgeSowPqHERlVtQrcQdNsfl)). A walkthrough of Euterpea’s music types. 
 
-- *Euterpea’s Music Types: Modifiers* ([PDF slides](https://drive.google.com/open?id=1o30Yc_UiOvVkLObMAiWDQeMKiR0US0sE) | [Example Code as .lhs](https://drive.google.com/open?id=1LJ4TbQquUOW2kjv4T8VvcyQj2A0roD35)). A walkthrough of Euterpea’s music modifiers for tempo, transposition, and instrument assignment.
+- *Euterpea’s Music Types: Modifiers* ([PDF slides](https://drive.google.com/open?id=1o30Yc_UiOvVkLObMAiWDQeMKiR0US0sE) \| [Example Code as .lhs](https://drive.google.com/open?id=1LJ4TbQquUOW2kjv4T8VvcyQj2A0roD35)). A walkthrough of Euterpea’s music modifiers for tempo, transposition, and instrument assignment.
 
-- *Euterpea’s Music Types: Phrase Modifiers* ([PDF slides](https://drive.google.com/open?id=16Y148w0Ovz6eltMoK9XRhIWwtHLVTzbW) | [Example Code as .lhs](https://drive.google.com/open?id=1F3QncC5GglyjUP9VDwFXXjCbgUazNwI0)). A slideshow walkthrough of Euterpea’s phrase modifiers for performance features in music.
+- *Euterpea’s Music Types: Phrase Modifiers* ([PDF slides](https://drive.google.com/open?id=16Y148w0Ovz6eltMoK9XRhIWwtHLVTzbW) \| [Example Code as .lhs](https://drive.google.com/open?id=1F3QncC5GglyjUP9VDwFXXjCbgUazNwI0)). A slideshow walkthrough of Euterpea’s phrase modifiers for performance features in music.
 
 # Talks (Slides and/or Videos)
 
