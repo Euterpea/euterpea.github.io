@@ -1,4 +1,6 @@
 # API Documentation
+
+[Back to Euterpea Home Page](https://euterpea.github.io/)
  
 ## Euterpea API Pages
 Information on the Euterpea library. Note-level (or score-level) information pertains to Euterpea’s Music data structures and the MIDI backend. The Signal-level API is for working with sound through virtual instrument definitions.
