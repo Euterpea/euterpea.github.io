@@ -1,5 +1,8 @@
 **Please note: the information on this page is rather extremely old and has not been updated in a long time. Some of it is still relevant, some not.**
 
+
+[Back to Euterpea Home Page](https://euterpea.github.io/)
+
 Last modified: Nov 2, 2017 @ 8:22 am
 
 This page is intended specifically for Euterpea 2 users. If you are not a Euterpea user or are using the older Euterpea 1.1.1, you may find one of these other pages more helpful:
