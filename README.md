@@ -2,13 +2,22 @@
 
 Euterpea is a cross-platform, domain-specific language for computer music applications embedded in the Haskell programming language. Euterpea is a wide-spectrum language, suitable for high-level music representation, algorithmic composition, music analysis, working with MIDI, low-level audio processing, sound synthesis, and virtual instrument design.
 
-# About
+# Site Navigation
+- [General Information](https://euterpea.github.io/) (this page) - all about Euterpea 2 and how to set it up.
+- [Troubleshooting](https://euterpea.github.io/troubleshooting)
+- [Setting up MIDI](https://euterpea.github.io/setting-up-midi)
+  - [Midi on Linux](https://euterpea.github.io/midi-on-linux)
+  - [Midi on Windows](https://euterpea.github.io/midi-onwindows)
+- [Getting Started](https://euterpea.github.io/getting-started)
+- [Tutorials and Talks](https://euterpea.github.io/tutorials-and-talks)
+
+# About Euterpea
 
 Euterpea is a domain-specific language, embedded in the functional language Haskell, for computer music composition and development. The name Euterpea is derived from Euterpe, who was one of the nine Greek Muses (goddesses of the arts), specifically the Muse of Music.
 
 Euterpea is a descendant of Haskore and HasSound, and is intended for both educational purposes as well as serious computer music applications. Euterpea is a wide-spectrum language, suitable for high-level music representation, algorithmic composition, and analysis; mid-level concepts such as MIDI; and low-level audio processing, sound synthesis, and instrument design.
 
-# Compatibility
+# Library Compatibility
 
 - OS: Windows 7+, OS X 10.12+, some Linux distributions (requires ALSA)
 - Recommended GHC versions: 8.2.2 – 9.4.6 depending on operating system
@@ -67,16 +76,16 @@ Mac users: to use HSoM’s musical user interfaces (MUIs), you must compile to e
 
 Now you’re ready to head to the Tutorials and Examples pages to learn about how to use Euterpea and try out some existing code. Once you’re ready to start building your own programs with Euterpea, head to the API Documentation for more information on Euterpea’s features.
 
-Having installation trouble or don’t hear any sound?
-Check out the Troubleshooting page for a list of solutions for common problems organized by OS and category. For sound-related problems, you can also check out the Setting up MIDI page.
+## Having installation trouble or don’t hear any sound?
+Check out the [Troubleshooting page](euterpea.github.io/troubleshooting) for a list of solutions for common problems organized by OS and category. For sound-related problems, you can also check out the Setting up MIDI page.
 
 Looking for a text editor to use with Haskell & Euterpea?
 Here are some suggestions:
 
-- Notepad++ (Windows only)
-- Atom with a Haskell plugin (Windows/Mac/Linux)
+- [Notepad++](https://notepad-plus-plus.org/) (Windows only)
+- [Atom](https://atom.io/) with a [Haskell plugin](https://atom.io/packages/atom-haskell) (Windows/Mac/Linux)
 
-Or check out this extensive list of editor options: https://wiki.haskell.org/Editors
+Or check out this extensive list of editor options: [https://wiki.haskell.org/Editors]
 
 # Questions/Comments
 
