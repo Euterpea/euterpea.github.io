@@ -1,4 +1,4 @@
-# Getting Started with Euterpea
+# Euterpea: a Haskell Library for Music Creation
 
 Euterpea is a cross-platform, domain-specific language for computer music applications embedded in the Haskell programming language. Euterpea is a wide-spectrum language, suitable for high-level music representation, algorithmic composition, music analysis, working with MIDI, low-level audio processing, sound synthesis, and virtual instrument design.
 
