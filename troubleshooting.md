@@ -66,7 +66,7 @@ To get these changes, you need to run cabal update before running cabal install 
 
 ## Playback
 
-**Using play or playDev drops notes sometimes. ** \
+**Using play or playDev drops notes sometimes.** \
 The ``play`` and ``playDev`` functions are lazy. Try using playS or playDevS with a finite portion of your music value and seeing if the problem persists – 
 if it does then the problem likely is with your music value and/or synthesizer (check for durations <=0 and overlapping notes with the same pitch and instrument). 
 However, if playS/playDevS perform the music correctly while play/playDev do not, it is likely an issue with simultaneous MIDI messages arriving in the wrong order to your MIDI device. 
@@ -139,42 +139,51 @@ system path. There are two options: (1) copy Haskell Platform’s glut.dll and r
 
 
 # Mac-Specific Problems
-(Mac, Installation with ghcup) Trying to install a GHC version between 8.2.2 and 9.4.6 gives a cryptic error about “sh”
 
-Your xcode version is out of date or you don’t have xcode commandline tools installed. Run xcode-select --install and try again. On new OS X versions, a permissions window will open but isn’t always visible if you have other windows open – you may need to hunt for the dialog box to proceed with the xcode installation.
+**Trying to install a GHC version between 8.2.2 and 9.4.6 gives a cryptic error about “sh”** \
+Your xcode version is out of date or you don’t have xcode commandline tools installed. Run \
+``xcode-select --install`` \
+and try again. On new OS X versions, a permissions window will open but isn’t always visible 
+if you have other windows open – you may need to hunt for the dialog box to proceed with the xcode installation.
 
-(Mac, Installation) Trying to install Euterpea or HSoM gives the error: unknown argument: ‘-no-pie’
+**Trying to install Euterpea or HSoM gives the error: unknown argument: ‘-no-pie’** \
+Your xcode version is out of date. If you have a recent version of OSX, run ``xcode-select --install`` to update it. 
+If you have an old version of OSX and can’t update xcode, an alternate solution is described here.
 
-Your xcode version is out of date. If you have a recent version of OSX, run xcode-select --install to update it. If you have an old version of OSX and can’t update xcode, an alternate solution is described here.
-
-(Mac, Installation) Installing Euterpea fails with the error “xcrun: error: invalid active developer path (…)”
-
+**Installing Euterpea fails with the error “xcrun: error: invalid active developer path (…)”** \
 This indicates missing command line tools that Haskell Platform depends on. To install these, run:
-xcode-select --install
+``xcode-select --install``
 
-(Mac, HSoM) Trying to run a program using HSoM’s MUIs crashes with the error: GLUT Fatal Error: internal error: NSInternalInconsistencyException, reason: nextEventMatchingMask should only be called from the Main Thread!
+**Trying to run a program using HSoM’s MUIs crashes with the error: GLUT Fatal Error: internal error: 
+NSInternalInconsistencyException, reason: nextEventMatchingMask should only be called from the Main Thread!** \
+This is due to trying to using HSoM’s MUIs in a multithreaded situation. While such applications often are successful on Windows, 
+on Mac they experience problems with the GLUT library. While this can limit performance, the only safe way to run a MUI-using 
+program on Mac is to stick to a single thread compile with either ghc YourProgram.lhs or ghc -O2 YourProgram.lhs. Avoid using 
+fork operations in any code involving MUIs and do not compile with either the rtsopts or threaded flags.
 
-This is due to trying to using HSoM’s MUIs in a multithreaded situation. While such applications often are successful on Windows, on Mac they experience problems with the GLUT library. While this can limit performance, the only safe way to run a MUI-using program on Mac is to stick to a single thread compile with either ghc YourProgram.lhs or ghc -O2 YourProgram.lhs. Avoid using fork operations in any code involving MUIs and do not compile with either the rtsopts or threaded flags.
+**Trying to run a MUI with MIDI output crashes with a pattern matching exception.** \
+This is a known bug that will hopefully be fixed soon, and it is due to trying to list MIDI output devices when there are none available. 
+The fix is to make sure you have a synthesizer (like SimpleSynth) or other MIDI output device active before starting the program.
+Also, make sure you compile your program with ghc using the instructions under “testing MUIs” further up on this page.
 
-(Mac, HSoM) Trying to run a MUI with MIDI output crashes with a pattern matching exception.
-
-This is a known bug that will hopefully be fixed soon, and it is due to trying to list MIDI output devices when there are none available. The fix is to make sure you have a synthesizer (like SimpleSynth) or other MIDI output device active before starting the program. Also, make sure you compile your program with ghc using the instructions under “testing MUIs” further up on this page.
-
-(Mac, old OSX versions) HSoM’s MUIs crash or the windows hang and are unresponsive.
-
-If you are trying to run them from GHCi, try compiling to executable as described in the “Testing HSoM’s MUIs” section further up on this page. If compiling to executable fails as well, try running the following: cabal install GLUT --ghc-options="-optl-Wl,-framework,GLUT" --reinstall --jobs=1 --force-reinstalls. You may need to reinstall HSoM with cabal install HSoM again afterwards. If you still have problems, please report the problems with a complete transcript and OS version information on HSoM’s GitHub issues page.
-
-Although this issue has been fixed on more recent versions of OSX and Haskell Platform, OSX 10.11 users with some older versions of Haskell Platform may also need to first disable rootless by running:
-
-sudo nvram boot-args="rootless 0"
-and then rebooting. See this thread for more information. If you already tried installing Haskell Platform without trying the fix above and the installation failed, you should fully uninstall it, disable rootless as above, and then reinstall. To uninstall Haskell Platform, run the following (and any additional commands you are prompted for):
-
-sudo uninstall-hs
+**HSoM’s MUIs crash or the windows hang and are unresponsive.** \
+If you are trying to run them from GHCi, try compiling to executable as described in the “Testing HSoM’s MUIs” section further up on this page.
+If compiling to executable fails as well, try running the following: \
+``cabal install GLUT --ghc-options="-optl-Wl,-framework,GLUT" --reinstall --jobs=1 --force-reinstalls`` \
+You may need to reinstall HSoM with cabal install HSoM again afterwards. 
+If you still have problems, please report the problems with a complete transcript and OS version information on HSoM’s GitHub issues page.
+Although this issue has been fixed on more recent versions of OSX and Haskell Platform, OSX 10.11 users with 
+some older versions of Haskell Platform may also need to first disable rootless by running: \
+``sudo nvram boot-args="rootless 0"`` \
+and then rebooting. See this thread for more information. If you already tried installing Haskell Platform without trying the 
+fix above and the installation failed, you should fully uninstall it, disable rootless as above, and then reinstall. 
+To uninstall Haskell Platform, run the following (and any additional commands you are prompted for): \
+``sudo uninstall-hs``
 
 
 # Linux-Specific Problems
-(Linux) Euterpea installation fails with a PortMidi-related error: “missing C library: asound”
 
-This is a missing dependency problem. Try running apt-get install libasound2-dev
+**Euterpea installation fails with a PortMidi-related error: “missing C library: asound”** \
+This is a missing dependency problem. Try running ``apt-get install libasound2-dev``
 
 Please note that Euterpea is not guaranteed to work on Linux. Although Ubuntu usually works, there are too many different distributions to ensure compatibility across everything. For example, NixOS is typically incompatible with Euterpea.
