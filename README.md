@@ -2,7 +2,13 @@
 
 Euterpea is a cross-platform, domain-specific language for computer music applications embedded in the Haskell programming language. Euterpea is a wide-spectrum language, suitable for high-level music representation, algorithmic composition, music analysis, working with MIDI, low-level audio processing, sound synthesis, and virtual instrument design.
 
-#Compatibility
+# About
+
+Euterpea is a domain-specific language, embedded in the functional language Haskell, for computer music composition and development. The name Euterpea is derived from Euterpe, who was one of the nine Greek Muses (goddesses of the arts), specifically the Muse of Music.
+
+Euterpea is a descendant of Haskore and HasSound, and is intended for both educational purposes as well as serious computer music applications. Euterpea is a wide-spectrum language, suitable for high-level music representation, algorithmic composition, and analysis; mid-level concepts such as MIDI; and low-level audio processing, sound synthesis, and instrument design.
+
+# Compatibility
 
 - OS: Windows 7+, OS X 10.12+, some Linux distributions (requires ALSA)
 - Recommended GHC versions: 8.2.2 – 9.4.6 depending on operating system
