@@ -1,5 +1,8 @@
 # Video Tutorials
 
+
+[Back to Euterpea Home Page](https://euterpea.github.io/)
+
 [Getting Started with Euterpea](https://youtu.be/Da7qwYADeds) (somewhat outdated) – a video tutorial on YouTube describing what to do to install 
 Euterpea and test that the play function is working. Note: this video was made quite a while ago and the installation 
 methods have since changed (see the Euterpea Homepage for details), but everything else is still relevant.
