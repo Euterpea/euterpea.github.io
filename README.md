@@ -58,16 +58,16 @@ If you can’t get Euterpea to install with the commands listed here, check the 
 
 **Windows users**: typically Windows will already have a generic MIDI synth installed and you can simply move on to testing Euterpea with GHCi. If you don’t have the Windows GM synth for whatever reason, you can try Coolsoft’s VirtualMIDISynth. Make sure to have it running with instruments loaded before starting GHCi.
 
-Open a *new* command prompt, powershell, or terminal and run the following commands.
+Open a *new* command prompt, powershell, or terminal. **Important:** do *not* simply start ghci from within the euterpea repository folder where you performed the installation! If you attempt to import Euterpea from the folder containing etuerpea.cabal, you'll get errors.
+
+Run the following commands:
 
 ```
 ghci
 import Euterpea
 play $ c 4 qn
-You should hear a note play if your synth is configured correctly. If you don’t, check the Setting Up MIDI and Troubleshooting pages.
 ```
-
-**Important:** do *not* start ghci from within the euterpea repository folder where you performed the installation! If you attempt to import Euterpea from the folder containing etuerpea.cabal, you'll get errors.
+You should hear a note play if your synth is configured correctly. If you don’t, check the [Setting Up MIDI](https://euterpea.github.io/setting-up-midi) and/or [Troubleshooting](https://euterpea.github.io/troubleshooting) pages.
 
 ## Step 4: Install HSoM (Optional)
 
