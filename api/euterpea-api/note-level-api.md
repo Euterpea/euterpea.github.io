@@ -15,9 +15,9 @@ For more information on the functions, types, and type classes listed here, plea
 | MEvent	| Event representation for notes. Used in conversion from Music to MIDI. |
 | Mode	| Tonality. Currently only Major and Minor are supported. |
 | Music a	| Polymorphic structure for representing music. |
-| Music1	| Type synonym for Music1 or Music (Pitch, \[NoteAttribute]). |
-| Note1	| Type Synonym for (Pitch, [NoteAttribute]). |
-| NoteAttribute	| For use with Music1. |
+| Music1	| Type synonym for Music Note1, or Music (Pitch, \[NoteAttribute]). |
+| Note1	| Type synonym for the tuple (Pitch, \[NoteAttribute]). |
+| NoteAttribute	| Extra per-note properties for use with Music1. Only the constructors Volume and Params directly affect performance in Euterpea. |
 | Octave	| ype synonym for Int. |
 | Performance	| Type synonym for \[MEvent] |
 | PhraseAttribute	| For use with Control. |
