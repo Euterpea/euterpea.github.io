@@ -43,8 +43,10 @@ Download or clone the Euterpea2 repository on GitHub. If downloading as a ZIP fi
 
 ```
 cabal update
-cabal v1-install --allow-newer
+cabal v1-install
 ```
+
+If you get errors to do with inability to satisfy version constraints, try installing with: ```cabal v1-install --allow-newer```
 
 Older ghc/cabal version users: if you run into weird errors about finding compatible package versions, try using
 ``cabal v1-update``
