@@ -50,7 +50,27 @@ Older ghc/cabal version users: if you run into weird errors about finding compat
 ``cabal v1-update``
 instead and then re-running the install command.
 
-If you can’t get Euterpea to install with the commands listed here, check the troubleshooting page.
+### Installation problems with PortMidi (one of Euterpea's dependencies)
+
+PortMidi-haskell has been experiencing installation issues on MacOS even with GHC versions that should otherwise be compatible. The source of the problem is completely outside Euterpea's code base, and therefore not something that the Euterpea maintainers can fix directly. If you get PortMidi errors to do with pmmacosxcm.c, then you can try manually installing PortMidi manually from a forked version of the repoitory that has a fix. To do this, cd into a directory *outside* where Euterpea was cloned. Then run:
+
+```
+git clone https://github.com/yosukeueda33/PortMidi-haskell
+cd PortMidi-haskell
+cabal v1-install
+```
+
+If this works, then cd back to the Euterpea2 folder and try installing it again (remember to use the v1-install and allow-newer flags). 
+
+If you are still having installation trouble and only want Euterpea's Music representations and MIDI exporting functionality, you can try installing [EuterpeaLite](https://github.com/Euterpea/EuterpeaLite) instead, which removes Euterpea's most problematic dependencies:
+
+```
+git clone https://github.com/Euterpea/EuterpeaLite
+cd EuterpeaLite
+cabal v1-install EuterpeaLite --allow-newer
+```
+
+If you still can’t get Euterpea to install with the information listed here, check the troubleshooting page.
 
 ## Step 3: Setup a Synth and Test Euterpea
 
