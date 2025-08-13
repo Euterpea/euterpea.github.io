@@ -135,11 +135,11 @@ This is a known issue with GHCi and the initial realize of the Windows 10 Creato
 see if the problem persists. If it does, the best workarounds are to either run GHCi from within a command prompt (or PowerShell) 
 and load the file manually or use WinGHCi as the default program to open source files.
 
-**(Windows, HSoM) Trying to run one one of HSoM’s MUIs results in a GLUT-related error.**\
-Some machines end up with out-dated versions of glut.dll, which is a file needed to run MUIs and other programs using the UISF library, 
-and others may lack it altogether. Haskell Platform comes with an appropriate version of glut.dll, but it doesn’t always end up in the
-system path. There are two options: (1) copy Haskell Platform’s glut.dll and replace older versions on your machine or 
-(2) add the location of Haskell Platform’s glut.dll to your system’s path variable.
+**Trying to run one one of HSoM’s MUIs results in a GLUT-related error, or an error about being blocked indefinitely on an MVar.**\
+Some machines end up with out-dated versions of glut32.dll, which is a file needed to run MUIs and other programs using the UISF library, 
+and others may lack it altogether. Haskell Platform used to come with its own version of the file, but newer versions may lack it. The solution is to
+obtain a copy of glut32.dll and put it in the bin folder for your ghc installation. I found that [this version of glut32.dll](https://drive.google.com/file/d/14v1DIWjpvsS689FmYxVHdyirShz7EOSz/view?usp=drive_link) 
+worked on both Windows 10 and 11 with GHC 8.10.5 and 9.8.2. 
 
 
 # Mac-Specific Problems
