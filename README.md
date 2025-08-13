@@ -69,8 +69,9 @@ If you are still having installation trouble and only want Euterpea's Music repr
 ```
 git clone https://github.com/Euterpea/EuterpeaLite
 cd EuterpeaLite
-cabal v1-install EuterpeaLite --allow-newer
+cabal v1-install
 ```
+(As with Euterpea2, you can also try adding the ```--allow-newer``` flag to resolve dependency issues with EuterpeaLite)
 
 If you still can’t get Euterpea to install with the information listed here, check the troubleshooting page.
 
