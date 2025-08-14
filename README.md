@@ -22,7 +22,8 @@ Euterpea is a descendant of Haskore and HasSound, and is intended for both educa
 
 - OS: Windows 7+, OS X 10.12+, some Linux distributions (requires ALSA)
 - Recommended GHC versions: 8.2.2 – 9.4.6 depending on operating system
-  - Windows: 8.2.2 – 8.10.5
+  - Windows 10: 8.2.2 – 9.4.6 
+  - Windows 11: 8.2.2 - 9.8.2
   - Mac: 8.2.2 – 9.4.6
   - Linux: varies a lot by distribution – 8.x usually works but Euterpea’s compatibility is not guaranteed with all distributions and some trial and error may be required to get it working.
 
